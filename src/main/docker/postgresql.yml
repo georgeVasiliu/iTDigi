@@ -1,0 +1,11 @@
+version: '2'
+services:
+  itdigi-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/iTDigi/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=iTDigi
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
